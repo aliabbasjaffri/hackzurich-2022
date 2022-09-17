@@ -3,6 +3,7 @@ import datetime
 import pandas as pd
 from fastapi import APIRouter, status
 # from requestobject import RequestObject
+from utils import WeatherData
 from fastapi.responses import JSONResponse
 
 router = APIRouter()
@@ -23,8 +24,9 @@ async def heart_beat_check():
 def predict_office_visit(data: dict):
     # data = data.dict()
 
-    temperature = float(data["temperature"])
-    precipitation = float(data["precipitation"])
+    weather_data = WeatherData()
+    temperature = weather_data.get_avg_temperature()
+    precipitation = weather_data.get_rain()
     people = float(data["people"])
 
     # Compute 'day', 'month' and 'dayofweek'
