@@ -1,7 +1,6 @@
 import uvicorn
-from fastapi import FastAPI
-import pickle
 from routes import router
+from fastapi import FastAPI
 
 app = FastAPI()
 app.include_router(router)
