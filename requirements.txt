@@ -4,3 +4,5 @@ requests
 matplotlib
 seaborn
 xarray
+netcdf4
+scipy
