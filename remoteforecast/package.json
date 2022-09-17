@@ -1,0 +1,25 @@
+{
+  "name": "remoteforecast",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@visx/group": "^2.10.0",
+    "@visx/mock-data": "^2.1.2",
+    "@visx/scale": "^2.2.2",
+    "@visx/shape": "^2.12.2",
+    "next": "12.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recharts": "^2.1.14"
+  },
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0"
+  }
+}

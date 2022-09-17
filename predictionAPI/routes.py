@@ -23,9 +23,9 @@ async def heart_beat_check():
 def predict_office_visit(data: dict):
     # data = data.dict()
 
-    temperature = data["temperature"]
-    precipitation = data["precipitation"]
-    people = data["people"]
+    temperature = float(data["temperature"])
+    precipitation = float(data["precipitation"])
+    people = float(data["people"])
 
     # Compute 'day', 'month' and 'dayofweek'
     datum = datetime.datetime.now()
@@ -45,7 +45,6 @@ def predict_office_visit(data: dict):
     with open("./../model/co2_estimator.sav", 'rb') as model:
         predictor = pickle.load(model)
         prediction = predictor.predict(df)
-        print(prediction)
         return JSONResponse(
             status_code=status.HTTP_200_OK, content={"prediction": prediction[0][0]}
         )
