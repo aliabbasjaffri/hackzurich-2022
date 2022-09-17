@@ -14,7 +14,7 @@ class PeopleData:
                                 parse_dates=['Unnamed: 0'])
 
         # Rename column
-        self.data.rename(columns={'Unnamed: 0': 'Datum',
+        self.data.rename(columns={'Unnamed: 0': 'datum',
                                   'consumed_meals': 'people'},
                          inplace=True)
 
