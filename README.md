@@ -21,7 +21,7 @@ the environment and our own health. Why do we need to know that? Because only th
 one can shape their behaviour and change their lives, their society and, ultimately, the environment. For the better.
 
 Remote Forecaster helps you to understand the impact of going to the office or not, depending on your habits, 
-meteorological situation and office air quality conditions. Improve your decisions, by be aware of what they are producing.
+meteorological situation and office air quality conditions. Improve your decisions, by being aware of what they are producing.
 
 # Architecture
 
