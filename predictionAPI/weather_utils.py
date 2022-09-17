@@ -79,6 +79,13 @@ class WeatherData:
         else:
             return 0
 
+    def get_rain_status(self):
+        rain = self.weather_data.get("rain", 0)
+        if rain != 0:
+            return True
+        else:
+            return False
+
 
 if __name__ == '__main__':
     weatherData = WeatherData()
