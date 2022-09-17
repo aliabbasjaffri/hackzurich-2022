@@ -64,3 +64,10 @@ async def get_cloud_cover():
         status_code=status.HTTP_200_OK, content={"cloudy":  WeatherData().get_cloud_percentage()}
     )
 
+
+@router.get("/get_avg_temp", response_class=JSONResponse)
+async def get_cloud_cover():
+    return JSONResponse(
+        status_code=status.HTTP_200_OK, content={"temperature":  WeatherData().get_avg_temperature()}
+    )
+
