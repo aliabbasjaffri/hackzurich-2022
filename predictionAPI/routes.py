@@ -8,6 +8,7 @@ from fastapi.responses import JSONResponse
 from date_utils import get_date_information
 
 router = APIRouter()
+people_data = PeopleData()
 
 
 @router.get("/", response_class=JSONResponse)
@@ -22,9 +23,8 @@ async def heart_beat_check():
 
 
 @router.get("/predict", response_class=JSONResponse)
-def predict_office_visit():
+async def predict_office_visit():
     weather_data = WeatherData()
-    people_data = PeopleData()
 
     temperature = weather_data.get_avg_temperature()
     precipitation = weather_data.get_rain()
@@ -49,3 +49,18 @@ def predict_office_visit():
         return JSONResponse(
             status_code=status.HTTP_200_OK, content={"prediction": prediction[0][0]}
         )
+
+
+@router.get("/get_rain_status", response_class=JSONResponse)
+async def get_rain_status():
+    return JSONResponse(
+        status_code=status.HTTP_200_OK, content={"raining":  WeatherData().get_rain_status()}
+    )
+
+
+@router.get("/get_cloud_cover", response_class=JSONResponse)
+async def get_cloud_cover():
+    return JSONResponse(
+        status_code=status.HTTP_200_OK, content={"cloudy":  WeatherData().get_cloud_percentage()}
+    )
+
