@@ -5,6 +5,7 @@ from fastapi import APIRouter, status
 # from requestobject import RequestObject
 from weather_utils import WeatherData
 from fastapi.responses import JSONResponse
+from date_utils import get_date_information
 
 router = APIRouter()
 
@@ -30,10 +31,7 @@ def predict_office_visit(data: dict):
     people = float(data["people"])
 
     # Compute 'day', 'month' and 'dayofweek'
-    datum = datetime.datetime.now()
-    datum_day = datum.day
-    datum_month = datum.month
-    datum_dayofweek = datum.today().weekday()
+    datum_day, datum_month, datum_dayofweek = get_date_information()
 
     df = pd.DataFrame([{
         "precipitation": precipitation,
