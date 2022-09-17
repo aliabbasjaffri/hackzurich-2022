@@ -4,7 +4,7 @@ from io import BytesIO
 import pandas as pd
 
 
-class People:
+class PeopleData:
 
     def __init__(self,
                  data_path: str = './../data/20220915_HackZurich_Sensirion_v1.csv'):
@@ -47,6 +47,7 @@ class People:
         average_people = (data_dayof_week_filtered['people'].sum()/len(data_dayof_week_filtered))
 
         return average_people
+
 
 class WeatherData:
     def __init__(self, city_id: int = 2657896):
