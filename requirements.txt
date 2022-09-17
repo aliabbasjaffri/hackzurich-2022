@@ -1,2 +1,5 @@
 jupyterlab==3.4.7
 pandas==1.4.4
+requests
+matplotlib
+seaborn
