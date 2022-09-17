@@ -74,7 +74,10 @@ class WeatherData:
 
     def get_rain(self):
         rain = self.weather_data.get("rain", 0)
-        return self.weather_data.get["rain"]["1h"] if rain != 0 else 0
+        if rain != 0:
+            return self.weather_data["rain"]["1h"]
+        else:
+            return 0
 
 
 if __name__ == '__main__':

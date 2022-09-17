@@ -7,7 +7,10 @@ COPY requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
+COPY data/ data/
+COPY model/ model/
 COPY predictionAPI/ predictionAPI/
+WORKDIR predictionAPI/
 
 EXPOSE 5000
 
