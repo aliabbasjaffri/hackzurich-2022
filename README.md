@@ -20,3 +20,13 @@ one can shape their behaviour and change their lives, their society and, ultimat
 
 Remote Forecaster helps you to understand the impact of going to the office or not, depending on your habits, 
 meteorological situation and office air quality conditions. Improve your decisions, by be aware of what they are producing.
+
+# Architecture
+
+## Model Development
+The model is giving you a percentage of how likely you should go to the office depending on the social interaction possibility.
+Percentage is computed from the backend from the model's prediction: the level of CO2 inside the office, 
+based on the outside weather situation and the inside air quality conditions.
+The features taken into account come from the following data sources:
+- [Democratize Air Quality - Sensirion](https://sensirion.com/career/career-news/hack-zurich/)
+- [Stündlich aktualisierte Meteodaten - Open Data Swiss](https://opendata.swiss/en/dataset/stundlich-aktualisierte-meteodaten-seit-1992)
