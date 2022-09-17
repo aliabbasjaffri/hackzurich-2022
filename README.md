@@ -1,5 +1,7 @@
-<img src="./graphics/small-logo.svg" width="400" height="300" class="center">
+<p align="center">
+  <img src="./graphics/small-logo.svg" width="400" height="300" class="center">
 <img src="./graphics/hackzurich_logo.png" width="400" height="300" class="center">
+</p>
 
 <br>
 
