@@ -22,6 +22,10 @@ meteorological situation and office air quality conditions. Improve your decisio
 
 # Architecture
 
+<p align="center">
+  <img src="./graphics/hackzurich_architecture.png" class="center">
+</p>
+
 ## Model Development
 The model is giving you a percentage of how likely you should go to the office depending on the social interaction possibility.
 Percentage is computed from the backend from the model's prediction: the level of CO2 inside the office, 
