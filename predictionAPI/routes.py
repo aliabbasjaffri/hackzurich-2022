@@ -3,7 +3,7 @@ import datetime
 import pandas as pd
 from fastapi import APIRouter, status
 # from requestobject import RequestObject
-from utils import WeatherData
+from weather_utils import WeatherData
 from fastapi.responses import JSONResponse
 
 router = APIRouter()
