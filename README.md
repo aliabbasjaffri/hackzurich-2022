@@ -68,4 +68,5 @@ The features taken into account come from the following data sources:
 - A significant amount of curated dataset is important to train a ML model for a given task. That can be a very hard task if there is not enough data, or not enough valid data.
 - Air quality data must have a valid hypothesis behind its collection. It is easier to collect data from anywhere but what does it represent and what would be the impact analysis of that is important to know.
 
-
+## What’s next for the project
+- We would want to collect more data in terms of household energy data, workplace energy data, household air quality data, workplace air quality data, public transport figures (how much used, how much energy spent, how much invested) to make even more solid predictions regarding safe and optimised commute options for everyone. 
