@@ -45,3 +45,5 @@ The features taken into account come from the following data sources:
 
 
 ### Frontend
+- As an app aimed at giving to the user quick and efficient informations, we wanted to work on a technology optimized for Mobile. React with Next.js provided a fast and easy way to showcase our app's main feature. In combination with Tailwind CSS, we were able to render easily a visually appealing webapp.
+- To show beautiful graphs and histograms explaining the details of the day's calculation, we chose to use the collection of visual components provided by Airbnb through Visx.
