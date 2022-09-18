@@ -64,3 +64,8 @@ The features taken into account come from the following data sources:
 - Retrieving, cleaning, aggregating and stitching different datasets together is quite a hard task. It is important to understand the sampling rate between different datasets as well as same units of measurement were used.
 - Understanding the target value to learn from an open data for a specific task was again a rigorous task. We had to verify that enough data exists in dataset so that training can be effective.
 
+## What we learned!
+- A significant amount of curated dataset is important to train a ML model for a given task. That can be a very hard task if there is not enough data, or not enough valid data.
+- Air quality data must have a valid hypothesis behind its collection. It is easier to collect data from anywhere but what does it represent and what would be the impact analysis of that is important to know.
+
+
