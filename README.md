@@ -57,3 +57,10 @@ The features taken into account come from the following data sources:
 </p>
 
 - As an app aimed at giving to the user quick and efficient information, we wanted to work on a technology optimized for Mobile. React with Next.js provided a fast and easy way to showcase our app's main feature. In combination with Tailwind CSS, we were able to render easily a visually appealing webapp.
+
+## Challenges
+- There were significant challenges associated with the course of path that we took. We made sure to take valid and reasonable assumptions along the way to understand how we can make the most with the provided data.
+- The dataset from Sinsirion was lacking contextual information that would be necessary to teach a ML model to generalize. To cater for that, we had to stitch few datasets together to get some meaningful dataset to start from.
+- Retrieving, cleaning, aggregating and stitching different datasets together is quite a hard task. It is important to understand the sampling rate between different datasets as well as same units of measurement were used.
+- Understanding the target value to learn from an open data for a specific task was again a rigorous task. We had to verify that enough data exists in dataset so that training can be effective.
+
