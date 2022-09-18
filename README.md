@@ -41,7 +41,8 @@ The features taken into account come from the following data sources:
 - We used the power of Machine learning to make valuable predictions from air quality, climate and energy datasets to conserve resources.
 - We realised that only one dataset on its own is not enough to enable us to make valuable predictions. We had to combine multiple open datasets, as well as gather real time weather results in order to achieve meaningful predictions.
 - We gather data from [Sensirion](https://sensirion.com/career/career-news/hack-zurich/), [opendata.swiss](https://opendata.swiss/) and [OpenWeatherApi](https://openweathermap.org/current) to feed our Machine Learning algorithm, and identify how to make an optimised decision in a constrained environment.
-
+- We hosted the machine learning model in Google cloud using dockerized FastAPI service, which was used to take data from different sources, preprocess it, and infer the prediction for user regarding feasibility for working from home or going to the office, along with sharing the energy impact of his choices on the environment.
+- We dockerized the application so that it could be deployed easily and deterministically using any cloud service or provider.
 
 
 ### Frontend
